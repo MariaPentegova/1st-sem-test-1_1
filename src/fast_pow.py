@@ -5,7 +5,7 @@ def fastPow(number, power):
         result = number
         k = abs(power) #дополнительная переменная на случай, если степень отрицательная
         while k != 1:
-            result = result**2
+            result *= result
             k //= 2
     if power>0: #вывод зависит от того, положительна или отрицательна степень
         return result
